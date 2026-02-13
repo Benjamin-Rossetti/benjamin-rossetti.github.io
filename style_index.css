@@ -26,6 +26,22 @@ li{
     0 -10px 30px rgba(255, 255, 255, 0.18);
     transition: transform 0.52s ease, background-color 0.52s ease;
 }
+.card:hover{
+    background-color: #5a5f50;
+    transform: translateY(-10px) scale(1.1);
+}
+.card-in{
+    opacity: 0;
+    transform: translateY(400px);
+    animation: cardSlide 1.6s ease forwards;
+}
+@keyframes cardSlide {
+    to{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
 /*Bouton*/
 .contact{
     background:rgba(255, 255, 255, 0.06);
@@ -88,6 +104,42 @@ li{
 .pres{
     font-size: 40px;
 }
+
+.Bonjour{
+    opacity: 0;
+    transform: translateY(400px);
+    animation: BonjourSlide 0.8s ease forwards;
+}
+@keyframes BonjourSlide{
+    to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+}
+.para{
+    opacity: 0;
+    transform: translateY(400px);
+    animation: paraSlide 1s ease forwards;
+}
+@keyframes paraSlide{
+    to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+}
+
+.about{
+    margin-top: 80px;
+    opacity: 0;
+    transform: translateY(400px);
+    animation: aboutSlide 1.3s ease forwards;
+}
+@keyframes aboutSlide {
+    to{
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
 /*bouton de contact*/
 .contact-btn{
     padding: 16px 32px;
@@ -131,28 +183,19 @@ li{
 /*quand on passe la souris sur le bouton*/
 .contact-btn:hover{
     background-color:#6a7058 ;
-    transform: translateY(-2px);
-    transform: scale(1.05);
+    transform: translateY(10px) scale(1.05);
 }
 .github-btn:hover{
     background-color:#6a7058 ;
-    transform: translateY(-2px);
-    transform: scale(1.05);
-}
-.card:hover{
-    background-color: #5a5f50;
-    transform: translateY(-10px);
-    transform: scale(1.1);
+    transform: translateY(10px) scale(1.05);
 }
 .Game:hover{
     background-color:#6a7058 ;
-    transform: translateY(-2px);
-    transform: scale(1.1);
+    transform: translateY(10px) scale(1.1);
 }
 .source:hover{
     background-color: rgba(255, 255, 255, 0.06);
-    transform: translateY(-6px);
-    transform: scale(1.1);
+    transform: translateY(-6px) scale(1.1);
 }
 
 
